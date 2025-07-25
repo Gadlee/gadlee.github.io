@@ -1,54 +1,72 @@
 <!doctype html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FarmerAI</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/widgets.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/widgets.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/custom.js"></script>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      line-height: 1.6;
-    }
-    .content {
-      max-width: 800px;
-      margin: auto;
-    }
-    .credits {
-      margin-top: 30px;
-      font-size: 0.9em;
-      font-style: italic;
-      color: #555;
-    }
-    .highlight {
-      font-weight: bold;
-      color: #2a7ae2;
+    .menu-widget {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
     }
   </style>
 </head>
+
 <body>
-  <div class="content">
-    <p>
-      Agriculture is the backbone of Uganda’s economy, employing over 70% of the population and contributing significantly to the country’s GDP. However, most of Uganda’s farmers are smallholder farmers who rely on traditional practices, word-of-mouth advice, and local observations to make critical agricultural decisions. Despite growing access to mobile phones and internet connectivity, farmers still face a lack of structured access to market information, pricing trends, and reliable forecasting tools. This limits their ability to:
-    </p>
-    <ul>
-      <li>Know the best time to plant or harvest based on market demand.</li>
-      <li>Identify which market or region offers the best price for their produce.</li>
-      <li>Anticipate price drops, demand surges, or export trends that affect profitability.</li>
-    </ul>
-    <p>
-      As a result, many farmers:
-    </p>
-    <ul>
-      <li>Sell their produce at low prices due to lack of market access.</li>
-      <li>Plant late or early based on guesswork, leading to mismatches with peak demand seasons.</li>
-      <li>Rely on middlemen, who often offer unfair prices and limited options.</li>
-    </ul>
-    <p class="credits">
-      Credits: <span class="highlight">Organization One</span>: Author One and Author Two / 
-      <span class="highlight">Organization Two</span>: Author Three and Author Four
-    </p>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <div class="content">
+      <div class="content-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <p class="text">
+              Agriculture is the backbone of Uganda’s economy, employing over 70% of the population and contributing significantly to the country’s GDP. However, most of Uganda’s farmers are smallholder farmers who rely on traditional practices, word-of-mouth advice, and local observations to make critical agricultural decisions. Despite growing access to mobile phones and internet connectivity, farmers still face a lack of structured access to market information, pricing trends, and reliable forecasting tools. This limits their ability to:
+1. Know the best time to plant or harvest based on market demand.
+2. Identify which market or region offers the best price for their produce.
+3. Anticipate price drops, demand surges, or export trends that affect
+profitability.
+As a result, many farmers:
+1. Sell their produce at low prices due to lack of market access.
+2. Plant late or early based on guesswork, leading to mismatches with peak
+demand seasons.
+3. Rely on middlemen, who often offer unfair prices and limited options.
+              </p>
+          </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------->
+        
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Credits-->
+        <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <p class="text text-small text-italic add-top-margin-large">
+              Credits: <span class="highlight-text">Organization One</span>: Author One and Author Two / <span class="highlight-text">Organization Two</span>: Author Three and Author Four
+            </p>
+          </div>
+        </div>
+        <!--End Credits-->
+        <!-------------------------------------------------------------------------------------------->
+      </div>
+    </div>
+    <div class="footer-container"></div>
   </div>
 </body>
+
 </html>
