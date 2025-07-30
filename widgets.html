@@ -32,22 +32,7 @@
     .content-container {
       flex: 1; /* pushes footer to bottom */
     }
-    .circular-images {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;   /* Align images to right within their column */
-  gap: 20px;
-  margin-left: auto;       /* Push the entire image group to far right */
-}
-
-
-    .circular-images img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 50%;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    }
+   
 
     .menu-widget {
       color: #fff !important;
@@ -67,11 +52,7 @@
   <!-- Main Text Content -->
   <div class="flex-item flex-column">
     <h2>Background and problem statement</h2>
-    <!-- Circular Images on Right -->
-  <div class="circular-images" style="margin-left: auto;">
-    <img src="img/maize.jpg" alt="Image 1">
-    <img src="img/rain_forecast.jpg" alt="Image 3">
-  </div>
+   
     <p class="text">
       Agriculture is the backbone of Uganda’s economy, employing over 70% of the population and contributing significantly to the country’s GDP. However, most of Uganda’s farmers are smallholder farmers who rely on traditional practices, word-of-mouth advice, and local observations to make critical agricultural decisions.
     </p>
@@ -94,7 +75,10 @@
       <li>Rely on middlemen, who often offer unfair prices and limited options.</li>
     </ul>
   </div>
-
+ <!-- Circular Images on Right -->
+  <div class="flex-item" style="flex: 1; display: flex; justify-content: flex-end;">
+    <img src="img/rain_forecast.jpg" alt="App Screenshot" style="max-width: 50%; height: auto; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+  </div>
   
 </div>
 
