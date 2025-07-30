@@ -3,24 +3,55 @@
 <head>
   <title>FarmerAI</title>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet" />
-  <link href="css/frame.css" rel="stylesheet" />
-  <link href="css/controls.css" rel="stylesheet" />
-  <link href="css/custom.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Open+Sans+Condensed:300,700|Source+Sans+Pro:400,700" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link href="css/frame.css" rel="stylesheet">
+  <link href="css/controls.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+
+  <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/footer.js"></script>
+
   <style>
     .menu-index {
       color: #fff !important;
       opacity: 1 !important;
       font-weight: 700 !important;
     }
+    .screenshot-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .screenshot-gallery img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .btn-download {
+      display: inline-block;
+      background-color: #28a745;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+    .btn-download:hover {
+      background-color: #218838;
+    }
   </style>
 </head>
+
 <body>
   <div class="menu-container"></div>
 
@@ -30,11 +61,20 @@
         <div class="flex-row">
           <div class="flex-item flex-column">
             <p class="text">
-              FarmerAI is a digital platform aimed at empowering Ugandan farmers with real-time market insights, crop management tools, and AI-powered predictions.
+              FarmerAI is a smart mobile application built to support Ugandan farmers with AI-powered market predictions, crop recommendations, and price insights.
             </p>
-            <h2>Get the app</h2>
+
+            <h2>Get the App</h2>
             <hr>
-            <a class="menu-widget" href="https://farmerai-2ch4.onrender.com">Get app</a>
+            <a class="btn-download" href="https://farmerai-2ch4.onrender.com">Download FarmerAI</a>
+
+            <h3 style="margin-top: 40px;">App Screenshots</h3>
+            <div class="screenshot-gallery">
+              <!-- Replace these image sources with your actual screenshots -->
+              <img src="img/screenshot1.png" alt="App Screenshot 1">
+              <img src="img/screenshot2.png" alt="App Screenshot 2">
+              <img src="img/screenshot3.png" alt="App Screenshot 3">
+            </div>
           </div>
         </div>
       </div>
