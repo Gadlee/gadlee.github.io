@@ -35,10 +35,11 @@
     .circular-images {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;   /* Align images to right within their column */
   gap: 20px;
-  margin-right: 10px;
-  }
+  margin-left: auto;       /* Push the entire image group to far right */
+}
+
 
     .circular-images img {
       width: 200px;
